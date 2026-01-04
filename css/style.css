@@ -152,3 +152,93 @@ h3 {
     font-family: 'Playfair Display', serif !important;
 
 }
+
+/* ========== ACCORDION FAQ STYLES ========== */
+
+/* Base styles for details element */
+.accordion-faq {
+    transition: all 0.3s ease;
+}
+
+/* Hide native marker */
+.accordion-faq summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Accordion content - collapsed on mobile */
+.accordion-faq .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding-top: 0;
+}
+
+.accordion-faq[open] .accordion-content {
+    max-height: 500px;
+    padding-top: 1rem;
+}
+
+/* ========== FAQ QUESTION STYLES ========== */
+.faq-pregunta {
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 2rem;
+    font-size: 1.1rem; /* Mobile: smaller text */
+    line-height: 1.4;
+}
+
+/* Plus/minus indicator - only on mobile */
+.faq-pregunta::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+.accordion-faq[open] .faq-pregunta::after {
+    content: '−';
+}
+
+/* ========== FAQ ANSWER STYLES ========== */
+.accordion-faq .accordion-content.faq-respuesta p,
+details.accordion-faq .faq-respuesta p {
+    font-size: 0.85rem !important; /* Mobile: smaller text */
+}
+
+/* ========== TABLET & DESKTOP (768px+) ========== */
+@media (min-width: 768px) {
+    /* Question: text-2xl (1.5rem) on tablet and desktop */
+    .faq-pregunta {
+        cursor: default;
+        padding-right: 0;
+        font-size: 1.5rem; /* text-2xl equivalent */
+    }
+
+    /* Hide plus/minus indicator on tablet/desktop */
+    .faq-pregunta::after {
+        display: none;
+    }
+
+    /* Always show content on tablet/desktop */
+    .accordion-faq .accordion-content {
+        max-height: none;
+        overflow: visible;
+        padding-top: 1rem;
+    }
+
+    /* Answer: normal text size on tablet/desktop */
+    .accordion-faq .accordion-content.faq-respuesta p,
+    details.accordion-faq .faq-respuesta p {
+        font-size: 1rem !important;
+    }
+
+    /* Prevent closing on click */
+    .accordion-faq[open] .accordion-content {
+        max-height: none;
+    }
+}

@@ -1,0 +1,14 @@
+tunnel: 0db7b0b2-44b0-433e-8d15-6104ca08284b
+credentials-file: /root/.cloudflared/0db7b0b2-44b0-433e-8d15-6104ca08284b.json
+
+ingress:
+  - hostname: psicodiaz.com
+    service: http://localhost:3000
+  - hostname: www.psicodiaz.com
+    service: http://localhost:3000
+  - hostname: sara.psicodiaz.com
+    service: http://localhost:3000
+  - service: http_status:404
+
+  - hostname: ha.psicodiaz.com
+    service: http://localhost:8123

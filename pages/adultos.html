@@ -38,8 +38,8 @@
       
         <!-- Contenido -->
         <div class="relative z-10 text-white">
-          <h1 class="text-4xl md:text-7xl font-light tracking-wide mb-8 mt-12 encabezado">Psicología Adultos</h1>
-          <h2 class="text-sm md:text-lg w-3/4 mx-auto tracking-wide subtitulo">
+          <h1 class="text-2xl sm:text-4xl md:text-7xl font-light tracking-wide mb-8 mt-12 encabezado">Psicología Adultos</h1>
+          <h2 class="text-xs sm:text-sm md:text-lg w-3/4 mx-auto tracking-wide subtitulo">
             Si algo te pesa o interfiere en tu bienestar, merece ser atendido. No necesitas traer respuestas, solo la disposición para explorarlo.
           </h2>
         </div>
@@ -52,30 +52,49 @@
         <div class="flex flex-col md:flex-row gap-8 items-stretch">
             <!-- Texto -->
             <div class="flex flex-col gap-8 md:w-2/3">
-                <div class="bg-gradient-to-r from-[#ebd4d0] to-[#dfc3be] p-8 rounded-lg shadow-lg">
-                    <h2 class="encabezado text-2xl font-bold mb-4 text-[#93574d]">¿Cómo sé si necesito ir al psicólogo?</h2>
-                    <p class="mb-4">
-                        Si te sientes desconectado/a de ti mismo/a y de tu entorno, si las emociones te abruman o si sientes que, a pesar de intentarlo, no logras avanzar en tu vida, la terapia puede ayudarte. 
-                    </p>
-                    <p class="mb-4">
-                        No es necesario “tocar fondo” para acudir a un profesional; si algo te pesa o interfiere en tu bienestar, merece ser atendido.
-                    </p>
-                </div>
+                <details class="accordion-faq bg-gradient-to-r from-[#ebd4d0] to-[#dfc3be] p-8 rounded-lg shadow-lg group" open>
+                    <summary class="faq-pregunta encabezado font-bold text-[#93574d]">
+                        ¿Cómo sé si necesito ir al psicólogo?
+                    </summary>
+                    <div class="accordion-content faq-respuesta">
+                        <p class="mb-4">
+                            Si te sientes desconectado/a de ti mismo/a y de tu entorno, si las emociones te abruman o si sientes que, a pesar de intentarlo, no logras avanzar en tu vida, la terapia puede ayudarte. 
+                        </p>
+                        <p class="mb-4">
+                            No es necesario "tocar fondo" para acudir a un profesional; si algo te pesa o interfiere en tu bienestar, merece ser atendido.
+                        </p>
+                    </div>
+                </details>
         
-                <div class="bg-gradient-to-r from-[#c9e6f5] to-[#aaddf9] p-8 rounded-lg shadow-lg">
-                    <h2 class="encabezado text-2xl font-bold mb-4 text-[#2a546b]">¿Por qué me siento así si “todo está bien” en mi vida?</h2>
-                    <p class="mb-4">
-                        A veces, incluso cuando aparentemente no hay grandes problemas externos, podemos sentirnos vacíos, desmotivados o desconectados de lo que nos rodea. Esto puede deberse a muchas razones: estrés acumulado, patrones aprendidos en la infancia, exigencias internas muy altas o incluso la falta de espacios donde expresar nuestras emociones.
-                    </p>
-                    <p class="mb-4">
-                        La terapia puede ayudarte a comprender qué hay detrás de este malestar y a recuperar tu bienestar.
-                    </p>
-                </div>
+                <details class="accordion-faq bg-gradient-to-r from-[#c9e6f5] to-[#aaddf9] p-8 rounded-lg shadow-lg group" open>
+                    <summary class="faq-pregunta encabezado font-bold text-[#2a546b]">
+                        ¿Por qué me siento así si "todo está bien" en mi vida?
+                    </summary>
+                    <div class="accordion-content faq-respuesta">
+                        <p class="mb-4">
+                            A veces, incluso cuando aparentemente no hay grandes problemas externos, podemos sentirnos vacíos, desmotivados o desconectados de lo que nos rodea. Esto puede deberse a muchas razones: estrés acumulado, patrones aprendidos en la infancia, exigencias internas muy altas o incluso la falta de espacios donde expresar nuestras emociones.
+                        </p>
+                        <p class="mb-4">
+                            La terapia puede ayudarte a comprender qué hay detrás de este malestar y a recuperar tu bienestar.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="accordion-faq bg-gradient-to-r from-[#ebd4d0] to-[#dfc3be] p-8 rounded-lg shadow-lg group" open>
+                    <summary class="faq-pregunta encabezado font-bold text-[#93574d]">
+                        ¿Y si no sé cómo explicar lo que me pasa?
+                    </summary>
+                    <div class="accordion-content faq-respuesta">
+                        <p class="mb-4">
+                            No necesitas traer respuestas, solo la disposición para explorarlo juntos/as. Muchas personas llegan a terapia sin saber exactamente qué les ocurre, y parte del trabajo es ir dándole forma a esas emociones difusas y encontrar el camino para sentirte mejor.
+                        </p>
+                    </div>
+                </details>
             </div>
             <!-- Imagen -->
             <div class="hidden md:flex md:w-1/3 flex justify-center items-stretch">
                 <div class="w-full relative">
-                    <img src="../media/adulto1.png" alt="Psicología infantil" class="rounded-lg object-contain h-full w-full max-h-full self-stretch absolute inset-0">
+                    <img src="../media/adulto1.png" alt="Psicología adultos" class="rounded-lg object-contain h-full w-full max-h-full self-stretch absolute inset-0">
                 </div>
             </div>
         </div>
@@ -86,34 +105,43 @@
             <!-- Imagen -->
             <div class="hidden md:flex md:w-1/3 flex justify-center items-stretch">
                 <div class="w-full relative">
-                    <img src="../media/adulto2.jpg" alt="Psicología infantil" class="rounded-lg object-cover h-full w-full max-h-full self-stretch absolute inset-0 shadow-lg">
+                    <img src="../media/adulto2.jpg" alt="Psicología adultos" class="rounded-lg object-cover h-full w-full max-h-full self-stretch absolute inset-0 shadow-lg">
                 </div>
             </div>
             <!-- Texto -->
             <div class="flex flex-col gap-8 md:w-2/3">
-                <div class="bg-gradient-to-r from-[#ebd4d0] to-[#dfc3be] p-8 rounded-lg shadow-lg">
-                    <h2 class="encabezado text-2xl font-bold mb-4 text-[#93574d]">¿Y si no sé cómo explicar lo que me pasa?
-                    </h2>
-                    <p class="mb-4">
-                        No necesitas traer respuestas, solo la disposición para explorarlo juntos/as. Muchas personas llegan a terapia sin saber exactamente qué les ocurre, y parte del trabajo es ir dándole forma a esas emociones difusas y encontrar el camino para sentirte mejor.
-                    </p>
-                </div>
-        
-                <div class="bg-gradient-to-r from-[#c9e6f5] to-[#aaddf9] p-8 rounded-lg shadow-lg">
-                    <h2 class="encabezado text-2xl font-bold mb-4 text-[#2a546b]">¿Por qué me cuesta conectar con los demás y conmigo mismo/a?
-                    </h2>
-                    <p class="mb-4">
-                        La desconexión emocional puede tener diferentes causas: experiencias pasadas, estrés crónico, falta de espacios para el autocuidado o incluso una respuesta de tu mente para protegerte de emociones intensas. En terapia, trabajaremos en identificar qué está bloqueando esa conexión y cómo reconstruirla de una manera sana y auténtica.
-                    </p>
-                </div>
+                <details class="accordion-faq bg-gradient-to-r from-[#c9e6f5] to-[#aaddf9] p-8 rounded-lg shadow-lg group" open>
+                    <summary class="faq-pregunta encabezado font-bold text-[#2a546b]">
+                        ¿Por qué me cuesta conectar con los demás y conmigo mismo/a?
+                    </summary>
+                    <div class="accordion-content faq-respuesta">
+                        <p class="mb-4">
+                            La desconexión emocional puede tener diferentes causas: experiencias pasadas, estrés crónico, falta de espacios para el autocuidado o incluso una respuesta de tu mente para protegerte de emociones intensas. En terapia, trabajaremos en identificar qué está bloqueando esa conexión y cómo reconstruirla de una manera sana y auténtica.
+                        </p>
+                    </div>
+                </details>
 
-                <div class="bg-gradient-to-r from-[#ebd4d0] to-[#dfc3be] p-8 rounded-lg shadow-lg">
-                    <h2 class="encabezado text-2xl font-bold mb-4 text-[#93574d]">¿Cuánto tiempo tomará sentirme mejor?
-                    </h2>
-                    <p class="mb-4">
-                        Cada proceso es único y depende de muchos factores, como la profundidad del malestar, la frecuencia de las sesiones y el trabajo personal entre ellas. Algunas personas experimentan alivio en pocas semanas, mientras que otras requieren un proceso más prolongado. Lo importante es avanzar a tu ritmo, con herramientas adaptadas a ti.
-                    </p>
-                </div>
+                <details class="accordion-faq bg-gradient-to-r from-[#ebd4d0] to-[#dfc3be] p-8 rounded-lg shadow-lg group" open>
+                    <summary class="faq-pregunta encabezado font-bold text-[#93574d]">
+                        ¿Cuánto tiempo tomará sentirme mejor?
+                    </summary>
+                    <div class="accordion-content faq-respuesta">
+                        <p class="mb-4">
+                            Cada proceso es único y depende de muchos factores, como la profundidad del malestar, la frecuencia de las sesiones y el trabajo personal entre ellas. Algunas personas experimentan alivio en pocas semanas, mientras que otras requieren un proceso más prolongado. Lo importante es avanzar a tu ritmo, con herramientas adaptadas a ti.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="accordion-faq bg-gradient-to-r from-[#c9e6f5] to-[#aaddf9] p-8 rounded-lg shadow-lg group" open>
+                    <summary class="faq-pregunta encabezado font-bold text-[#2a546b]">
+                        ¿Qué pasa si tengo miedo de enfrentar mis emociones?
+                    </summary>
+                    <div class="accordion-content faq-respuesta">
+                        <p class="mb-4">
+                            Es completamente normal sentir miedo o resistencia. En terapia, no se trata de forzarte a revivir experiencias difíciles, sino de crear un espacio seguro donde puedas procesarlas de manera gradual, con el apoyo necesario para que te sientas acompañado/a en todo momento.
+                        </p>
+                    </div>
+                </details>
             </div>
         </div>
 
@@ -121,31 +149,24 @@
         <div class="flex flex-col md:flex-row gap-8 items-stretch">
             <!-- Texto -->
             <div class="flex flex-col gap-8 md:w-2/3">
-                <div class="bg-gradient-to-r from-[#c9e6f5] to-[#aaddf9] p-8 rounded-lg shadow-lg">
-                    <h2 class="encabezado text-2xl font-bold mb-4 text-[#2a546b]">¿Qué pasa si tengo miedo de enfrentar mis emociones?
-                    </h2>
-                    <p class="mb-4">
-                        Es completamente normal sentir miedo o resistencia. En terapia, no se trata de forzarte a revivir experiencias difíciles, sino de crear un espacio seguro donde puedas procesarlas de manera gradual, con el apoyo necesario para que te sientas acompañado/a en todo momento.
-                    </p>
-                </div>
-
-                <div class="bg-gradient-to-r from-[#ebd4d0] to-[#dfc3be] p-8 rounded-lg shadow-lg">
-                    <h2 class="encabezado text-2xl font-bold mb-4 text-[#93574d]">¿Cómo empiezo?
-                    </h2>
-                    <p class="mb-4">
-                        Si sientes que la terapia puede ayudarte, el primer paso es agendar una sesión. En nuestro primer encuentro, hablaremos sobre lo que te preocupa y cómo podemos trabajar juntos/as para recuperar tu bienestar.
-                    </p>
-                    <p class="mb-4">
-                        No tienes que hacerlo solo/a.                    
-                    </p>
-                </div>
-
-                
+                <details class="accordion-faq bg-gradient-to-r from-[#ebd4d0] to-[#dfc3be] p-8 rounded-lg shadow-lg group" open>
+                    <summary class="faq-pregunta encabezado font-bold text-[#93574d]">
+                        ¿Cómo empiezo?
+                    </summary>
+                    <div class="accordion-content faq-respuesta">
+                        <p class="mb-4">
+                            Si sientes que la terapia puede ayudarte, el primer paso es agendar una sesión. En nuestro primer encuentro, hablaremos sobre lo que te preocupa y cómo podemos trabajar juntos/as para recuperar tu bienestar.
+                        </p>
+                        <p class="mb-4">
+                            No tienes que hacerlo solo/a.                    
+                        </p>
+                    </div>
+                </details>
             </div>
             <!-- Imagen -->
             <div class="hidden md:flex md:w-1/3 flex justify-center items-stretch">
                 <div class="w-full relative">
-                    <img src="../media/adulto3.webp" alt="Psicología infantil" class="rounded-lg object-cover h-full w-full max-h-full self-stretch absolute inset-0 shadow-lg">
+                    <img src="../media/adulto3.webp" alt="Psicología adultos" class="rounded-lg object-cover h-full w-full max-h-full self-stretch absolute inset-0 shadow-lg">
                 </div>
             </div>
         </div>
@@ -153,6 +174,40 @@
 
     <!-- FOOTER -->
     <div data-include="../pages/footer.html"></div>
+
+    <!-- Accordion behavior script -->
+    <script>
+        (function() {
+            const isMobile = () => window.innerWidth < 768;
+            const accordions = document.querySelectorAll('.accordion-faq');
+            
+            function handleAccordionState() {
+                accordions.forEach(acc => {
+                    if (isMobile()) {
+                        // On mobile: close all accordions initially
+                        acc.removeAttribute('open');
+                    } else {
+                        // On desktop: force all accordions open
+                        acc.setAttribute('open', '');
+                    }
+                });
+            }
+
+            // Prevent closing on desktop
+            accordions.forEach(acc => {
+                acc.addEventListener('click', (e) => {
+                    if (!isMobile()) {
+                        e.preventDefault();
+                        acc.setAttribute('open', '');
+                    }
+                });
+            });
+
+            // Run on load and resize
+            handleAccordionState();
+            window.addEventListener('resize', handleAccordionState);
+        })();
+    </script>
 
 </body>
 </html>
