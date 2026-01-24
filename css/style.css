@@ -49,12 +49,12 @@ p, li {
     transition: transform 300ms ease-in-out;  
 }
 
-div.cuadro#formulario {
+div.cuadro#eholo-public-profile-container {
     transition: none !important;
     background-color: white;
 }
 @media (max-width: 639px) {
-    div.cuadro#formulario {
+    div.cuadro#eholo-public-profile-container {
         padding: 1rem;
     }
 }
@@ -64,7 +64,7 @@ div.cuadro#formulario {
 
 }
 
-div.cuadro#formulario:hover {
+div.cuadro#eholo-public-profile-container:hover {
     transform: none !important;
 }
 

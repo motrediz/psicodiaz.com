@@ -22,6 +22,27 @@
         gtag('js', new Date());
         gtag('config', 'G-3ELE6MEKEE');
     </script>
+    <script>
+        var addIframe = () => {
+            var ifr = document.createElement("iframe");
+            ifr.src= `https://company.eholo.health/centros/saradíaz/`
+            ifr.width= "100%"
+            ifr.height= "100%"
+            ifr.style = "border: none; background: white; margin: 0 auto; padding: 0;overflow: hidden"
+            var eholoContainer = document.getElementById("eholo-public-profile-container");
+            eholoContainer.appendChild(ifr);
+        }
+        var waitForContainer = () => {
+            window.setTimeout(() => {
+                if(document.getElementById('eholo-public-profile-container') != null){
+                    addIframe();
+                } else {
+                    waitForContainer();
+                }
+            },5)
+        }
+        waitForContainer()
+    </script>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
@@ -47,17 +68,17 @@
     <!-- Dónde puedes encontrarme? -->
     <section>
         <h1 class="banner">¿Dónde puedes encontrarme?</h1>
-        <div class="contenedorCuadro grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="contenedorCuadro grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
 
             <a href="https://maps.app.goo.gl/iniTWXgEDz8Cc2fP9" target="_blank" class="cuadro h-[500px]">
                 <img src="../media/mapaPollenca.webp" alt="Pollença" class="w-full h-full object-cover rounded-lg">
                 <button class="cuadroBoton">Pollença</button>
             </a>
 
-            <a href="https://maps.app.goo.gl/6fJPRnWkkoYHPQr27" target="_blank" class="cuadro h-[500px]">
+            <!-- <a href="https://maps.app.goo.gl/6fJPRnWkkoYHPQr27" target="_blank" class="cuadro h-[500px]">
                 <img src="../media/mapaPalma.webp" alt="Palma" class="w-full h-full object-cover rounded-lg">
                 <button class="cuadroBoton">Palma</button>
-            </a>
+            </a> -->
 
             <a href="https://maps.app.goo.gl/xo1tMEKhZz7sMuZx7" target="_blank" class="cuadro h-[500px]">
                 <img src="../media/mapaAlcudia.webp" alt="Alcudia" class="w-full h-full object-cover rounded-lg">
@@ -120,12 +141,13 @@
     <!-- Pide tu cita -->
     <section>
         <h1 class="banner">Pide tu cita</h1>
-        <div class="contenedorCuadro">
+        <!-- <div class="contenedorCuadro">
             <div id="formulario" class="cuadro h-[700px] w-full lg:w-2/5 mx-auto my-auto">
                 <iframe width="100%" height="100%"
                     src="https://www.docfav.com/portal-iframe/cf73fce2-255b-4253-ba19-cc0e2120c2aa/"></iframe>
             </div>
-        </div>
+        </div> -->
+        <div id="eholo-public-profile-container" class="cuadro" style="width: 93%; height: 100vh; margin: 0 auto; background-color: #fcfdff; overflow-x: hidden;"></div>
     </section>
 
     <!-- Tienes seguro privado? -->
